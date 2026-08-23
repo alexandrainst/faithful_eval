@@ -73,6 +73,7 @@ LANG_TO_PASSAGE = {
     "sl": "odlomek",  # Slovenian
     "es": "pasaje",  # Spanish
     "sv": "stycke",  # Swedish
+    "sq": "pasaj",  # Albanian
     "uk": "уривок",  # Ukrainian
 }
 
