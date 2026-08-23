@@ -1,0 +1,5 @@
+Text: ${text}
+
+Beäntwert déi folgend Fro iwwer den Text hei uewen.
+
+Fro: ${question}
