@@ -8,6 +8,7 @@ from string import Template
 
 # Type for supported languages
 Lang = t.Literal[
+    "be",
     "bs",
     "bg",
     "ca",
@@ -25,6 +26,7 @@ Lang = t.Literal[
     "hu",
     "is",
     "it",
+    "lb",
     "lv",
     "lt",
     "no",
@@ -41,6 +43,7 @@ Lang = t.Literal[
 ]
 
 LANG_TO_PASSAGE = {
+    "be": "уривок",  # Belarusian
     "bs": "odlomak",  # Bosnian
     "bg": "пасаж",  # Bulgarian
     "ca": "passatge",  # Catalan
@@ -58,6 +61,7 @@ LANG_TO_PASSAGE = {
     "hu": "szövegrészlet",  # Hungarian
     "is": "efnisgrein",  # Icelandic
     "it": "brano",  # Italian
+    "lb": "passage",  # Luxembourgish
     "lv": "posms",  # Latvian
     "lt": "ištrauka",  # Lithuanian
     "no": "avsnitt",  # Norwegian
@@ -73,6 +77,7 @@ LANG_TO_PASSAGE = {
 }
 
 LANG_TO_FULL_NAME = {
+    "be": "Belarusian",
     "bs": "Bosnian",
     "bg": "Bulgarian",
     "ca": "Catalan",
@@ -90,6 +95,7 @@ LANG_TO_FULL_NAME = {
     "hu": "Hungarian",
     "is": "Icelandic",
     "it": "Italian",
+    "lb": "Luxembourgish",
     "lv": "Latvian",
     "lt": "Lithuanian",
     "no": "Norwegian",
