@@ -121,8 +121,12 @@ def main(config: DictConfig) -> None:
     if config.multiwikiqa.enable:
         header("Preparing synthetic dataset", color="light_blue", level=logging.INFO)
         try:
+            multiwikiqa_language = (
+                "pt-pt" if config.language == "pt" else config.language
+            )
             dataset = load_dataset(
-                f"{config.hub_organisation}/{target_dataset_name}", name=config.language
+                f"{config.hub_organisation}/{target_dataset_name}",
+                name=multiwikiqa_language,
             )
         except ValueError:
             log(
